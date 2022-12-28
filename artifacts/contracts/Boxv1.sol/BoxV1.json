@@ -1,0 +1,68 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "BoxV1",
+  "sourceName": "contracts/Boxv1.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "ValueChange",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "getValue",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_value",
+          "type": "uint256"
+        }
+      ],
+      "name": "setValue",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "version",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b5060ec8061001f6000396000f3fe6080604052348015600f57600080fd5b5060043610603c5760003560e01c80632096525514604157806354fd4d501460575780635524107714605d575b600080fd5b6000545b60405190815260200160405180910390f35b60016045565b606c6068366004609e565b606e565b005b600081815560405182917fa08786470df18dce77f2c3a12acf2022fd1ff8b97fe62396a54ee458dcebef0491a250565b60006020828403121560af57600080fd5b503591905056fea26469706673582212205433a5b37e063722f180d23f93bcfe42aa0df76b9550036214e2ef6ae022ff4e64736f6c634300080a0033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b5060043610603c5760003560e01c80632096525514604157806354fd4d501460575780635524107714605d575b600080fd5b6000545b60405190815260200160405180910390f35b60016045565b606c6068366004609e565b606e565b005b600081815560405182917fa08786470df18dce77f2c3a12acf2022fd1ff8b97fe62396a54ee458dcebef0491a250565b60006020828403121560af57600080fd5b503591905056fea26469706673582212205433a5b37e063722f180d23f93bcfe42aa0df76b9550036214e2ef6ae022ff4e64736f6c634300080a0033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

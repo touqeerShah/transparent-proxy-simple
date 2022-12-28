@@ -1,0 +1,35 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "contracts/Boxv2.sol": {
+      "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.10;\n\ncontract BoxV2 {\n    uint256 internal value;\n    event ValueChange(uint256 indexed value);\n\n    constructor() {}\n\n    function setValue(uint256 _value) public {\n        value = _value;\n        emit ValueChange(value);\n    }\n\n    function increment() public {\n        value = value + 1;\n        emit ValueChange(value);\n    }\n\n    function getValue() public view returns (uint256) {\n        return value;\n    }\n\n    function version() public pure returns (uint256) {\n        return 2;\n    }\n}\n"
+    }
+  },
+  "settings": {
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "evm.methodIdentifiers",
+          "metadata",
+          "devdoc",
+          "userdoc",
+          "storageLayout",
+          "evm.gasEstimates"
+        ],
+        "": [
+          "ast"
+        ]
+      }
+    },
+    "metadata": {
+      "useLiteralContent": true
+    }
+  }
+}
